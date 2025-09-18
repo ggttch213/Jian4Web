@@ -1,0 +1,19 @@
+/* home.css */
+.homepage {
+    background-image: url('../image/images.jpg'); /* 相对于 public 文件夹的根目录 */
+    background-size: cover; /* 确保图片覆盖整个容器 */
+  background-position: center; /* 确保图片在容器中居中 */
+  background-repeat: no-repeat; /* 确保图片不重复 */
+  height: 100vh; /* 设置高度为视窗高度 */
+  width: 100vw; /* 设置宽度为视窗宽度 */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* 垂直居中内容 */
+  justify-content: center; /* 水平居中内容 */
+  color: #FF4F4F; /* 设置文本颜色，确保在背景上可见 */
+  font-size: 102PX; /* 设置文本大小 */
+  overflow: hidden; /* 隐藏溢出内容 */
+  font-family: 微軟正黑體;
+  }
+  

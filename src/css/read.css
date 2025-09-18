@@ -1,0 +1,116 @@
+/* read.css */
+
+.read-body {
+  background-color: #ffffff; /* 设置背景颜色为白色 */
+  min-height: 100vh; /* 确保背景覆盖整个页面 */
+}
+
+.banner {
+  background-image: url('../image/READ.png'); /* 设置背景图片 */
+  background-size: cover;
+  background-position: center; /* 确保图片在容器中居中 */
+  background-repeat: no-repeat; /* 确保图片不重复 */
+  color: white; /* 设置文字颜色 */
+  padding: 20px 0; /* 设置内边距 */
+  text-align: center; /* 设置文本居中 */
+  position: relative; /* 相对定位，避免遮挡 */
+  width: 100%;
+  height: 400px;
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中内容 */
+  justify-content: center; /* 水平居中内容 */
+  z-index: 1000; /* 确保在上层显示 */
+  margin-top: 66px;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 72px;
+}
+
+.sub-banner {
+  width: 65%;
+  height: auto;
+  margin: 30px auto 0; /* 确保新的横幅在第一个横幅下方 */
+  background-color: rgba(255, 182, 193, 0.9); /* 半透明背景 */
+  color: black;
+  padding: 10px;
+  text-align: left; /* 确保内容靠左对齐 */
+  border-radius: 15px; /* 圆角处理 */
+  position: relative;
+  z-index: 999; /* 确保在第一个横幅下方 */
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中内容 */
+}
+
+.sub-banner-content {
+  display: flex;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 125px; /* 调整图片大小 */
+  height: 125px;
+  margin-right: 20px; /* 图片和内容之间的间距 */
+  border-radius: 10px; /* 圆角处理 */
+}
+
+.article-content {
+  flex: 1;
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-direction: column; /* 垂直布局 */
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+}
+
+.article-content h2 {
+  margin: 0; /* 去除默认外边距 */
+  font-size: 2rem; /* 字体大小 */
+  text-align: center;
+}
+
+.article-content p {
+  margin-top: 10px;
+  text-align: center;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* 设置一个高的 z-index 值 */
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10000; /* 设置一个更高的 z-index 值 */
+}
+
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 20px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: #f05d5e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #e94b4b;
+}
